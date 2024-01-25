@@ -1,0 +1,18 @@
+Hour Rotation:
+
+* The hour completes a full rotation (360 degrees) in 12 hours.
+* So, the rotation per hour is 360 / 12 = 30 degrees.
+* Additionally, the hour hand should move based on the minute progress within the hour. * So, for every minute, it should move 30 / 60 = 0.5 degrees.
+* The total rotation for the hour hand is then (hours % 12 + minutes / 60) * 30 degrees.
+
+Minute Rotation:
+
+* The minute completes a full rotation in 60 minutes (1 hour).
+* Therefore, the rotation per minute is 360 / 60 = 6 degrees.
+* The total rotation for the minute hand is (minutes + seconds / 60) * 6 degrees.
+
+Second Rotation:
+
+* The second completes a full rotation in 60 seconds (1 minute).
+* Hence, the rotation per second is 360 / 60 = 6 degrees.
+* The total rotation for the second hand is seconds * 6 degrees.
